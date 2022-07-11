@@ -1,0 +1,36 @@
+/* 100% Height x 100% Width */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Register Block */
+.parent {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+
+.child {
+  flex-grow: 1;
+}
+
+@media(max-width:1000px) {
+  .child1{
+    display: none;
+  }
+  .child2{
+    width: 100%;
+  }
+}
